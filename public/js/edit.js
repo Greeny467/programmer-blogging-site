@@ -63,7 +63,7 @@ const deletePost = () => {
     })
     .then((response) => {
         console.log(response);
-        window.location.replace('${siteUrl}');
+        window.location.replace(`/dashboard/${userId}`);
     });
 };
 
