@@ -13,7 +13,7 @@ setTimeout(() => {
   console.log(`Loop stopped after ${stopAfterMinutes} minutes.`);
 
   // Perform your fetch operation here
-  fetch(`${siteUrl}api/users/logout`, {
+  fetch(`/api/users/logout`, {
     method: 'POST', // or 'GET', 'PUT', etc.
     headers: {
       'Content-Type': 'application/json',

@@ -1,4 +1,4 @@
-const siteUrl = siteUrl1;
+
 const loginFormHandler = async (event) => {
   event.preventDefault();
 

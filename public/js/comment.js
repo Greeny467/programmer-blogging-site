@@ -1,6 +1,6 @@
 const commentInput = document.querySelector('input');
 const submitButton = document.querySelector('#submitButton');
-const siteUrl = siteUrl1;
+
 
 const postComment = () => {
     const text = commentInput.value;
@@ -15,7 +15,7 @@ const postComment = () => {
 
     console.log(newComment);
 
-    fetch(`${siteUrl}api/db/comment`, {
+    fetch(`/api/db/comment`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

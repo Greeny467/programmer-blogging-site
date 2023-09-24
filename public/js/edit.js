@@ -2,14 +2,14 @@ const titleEl = document.querySelector('[name ="title"');
 const textEl = document.querySelector('[name="text"');
 const submitButton = document.querySelector('#submitButton');
 const deleteButton = document.querySelector('#deleteButton');
-const siteUrl = siteUrl1;
+
 
 const postId = sessionPostId
 
 let userId;
 
 const getCurrent = async () =>{
-    const response = await fetch(`${siteUrl}api/db/post/${postId}`);
+    const response = await fetch(`/api/db/post/${postId}`);
 
     console.log(response);
     const postData = await response.json()
@@ -32,7 +32,7 @@ const editPost = async () => {
         user_id: poster,
     };
 
-    fetch(`${siteUrl}api/db/post/${postId}`, {
+    fetch(`/api/db/post/${postId}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ const editPost = async () => {
     .then((response) => {
         if (response.ok) {
             console.log('Post updated successfully');
-            window.location.replace(`${siteUrl}post/${postId}`)
+            window.location.replace(`/post/${postId}`)
 
         } 
         else {
@@ -58,7 +58,7 @@ const editPost = async () => {
 
 const deletePost = () => {
 
-    fetch(`${siteUrl}api/db/post/${postId}`, {
+    fetch(`/api/db/post/${postId}`, {
         method: 'DELETE'
     })
     .then((response) => {

@@ -1,7 +1,7 @@
 const titleEl = document.querySelector('[name ="title"');
 const textEl = document.querySelector('[name="text"');
 const submitButton = document.querySelector('#submitButton');
-const siteUrl = siteUrl1;
+
 
 const userId = sessionUserId;
 
@@ -16,7 +16,7 @@ const createPost = async () => {
         user_id: poster,
     };
 
-    fetch(`${siteUrl}api/db/post`, {
+    fetch(`/api/db/post`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -27,14 +27,14 @@ const createPost = async () => {
         if (response.ok) {
             console.log('Post created successfully');
 
-            fetch(`${siteUrl}api/db/post/${userId}/${newPost.title}/${newPost.text}`)
+            fetch(`/api/db/post/${userId}/${newPost.title}/${newPost.text}`)
             .then((response) => {
                 return response.json();
             })
             .then((data) => {
                 const searchId = data.id;
 
-                window.location.replace(`${siteUrl}post/${searchId}`);
+                window.location.replace(`/post/${searchId}`);
             }) 
            
 
