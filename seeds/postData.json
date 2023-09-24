@@ -1,0 +1,43 @@
+[
+    {
+      "title": "Introduction to JavaScript",
+      "text": "Learn the fundamentals of JavaScript, a popular programming language for web development.",
+      "user_id": 1
+    },
+    {
+      "title": "Python for Beginners",
+      "text": "Get started with Python, a versatile and easy-to-learn programming language.",
+      "user_id": 2
+    },
+    {
+      "title": "Web Development with HTML and CSS",
+      "text": "Create beautiful websites with HTML and CSS, the building blocks of the web.",
+      "user_id": 3
+    },
+    {
+      "title": "Java Programming Masterclass",
+      "text": "Become a Java expert and build powerful applications with this comprehensive course.",
+      "user_id": 4
+    },
+    {
+      "title": "Database Design and SQL",
+      "text": "Learn how to design databases and query data using SQL.",
+      "user_id": 5
+    },
+    {
+      "title": "C++ Programming Essentials",
+      "text": "Master the C++ programming language for game development and more.",
+      "user_id": 1
+    },
+    {
+      "title": "Front-End Web Development with React",
+      "text": "Build interactive and dynamic web applications with React.js.",
+      "user_id": 2
+    },
+    {
+      "title": "Data Science with Python",
+      "text": "Explore data science and machine learning using Python libraries like NumPy and Pandas.",
+      "user_id": 3
+    }
+  ]
+  

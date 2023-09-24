@@ -1,0 +1,15 @@
+{{> header}}
+<main class="container container-fluid mt-5"></main>
+    <h1>Home</h1>
+    {{#each posts as |post|}}
+    {{> home-posts}}
+    {{/each}}
+</main>
+<footer>
+    
+</footer>
+
+{{#if loggedIn}}
+<script src="js/logout.js"></script>
+<script src="/js/idle.js"></script>
+{{/if}}

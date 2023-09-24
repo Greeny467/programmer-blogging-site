@@ -1,0 +1,48 @@
+{{> header}}
+<main class="container container-fluid mt-5"></main>
+    <div>
+        <h1>{{post.title}}</h1>
+        <h4>{{post.user.username}}</h4>
+        <p>{{post.date}}</p>
+        <div>
+            <p>{{post.text}}</p>
+        </div>
+        <div>
+            {{#if loggedIn}}
+            <form>
+                <input placeholder="Your Comment" name="commentInput">
+                <button id="submitButton">submit</button>
+            </form>
+            {{else}}
+            <div>
+                <h2>Log in to comment</h2>
+            </div>
+            {{/if}}
+
+            {{#if areComments}}
+            {{#each comments as |comment|}}
+            <div>
+                <h5>{{comment.user.username}}, {{comment.date}}</h5>
+                <p>{{comment.text}}</p>
+            </div>
+            {{/each}}
+
+            {{else}}
+            <h2>No comments here yet</h2>
+            {{/if}}
+        </div>
+    </div>
+</main>
+<footer>
+    
+</footer>
+
+{{#if loggedIn}}
+<script>
+  var sessionUserId = {{userId}}
+  var sessionPostId = {{post.id}}
+</script>
+<script src="/js/logout.js"></script>
+<script src="/js/idle.js"></script>
+<script src="/js/comment.js"></script>
+{{/if}}

@@ -1,0 +1,78 @@
+[
+    {
+      "text": "Great introduction to JavaScript!",
+      "user_id": 1,
+      "post_id": 1
+    },
+    {
+      "text": "I found Python very beginner-friendly.",
+      "user_id": 2,
+      "post_id": 2
+    },
+    {
+      "text": "HTML and CSS are essential for web design.",
+      "user_id": 3,
+      "post_id": 3
+    },
+    {
+      "text": "Java can be challenging but rewarding.",
+      "user_id": 4,
+      "post_id": 4
+    },
+    {
+      "text": "SQL queries are powerful tools for data retrieval.",
+      "user_id": 5,
+      "post_id": 5
+    },
+    {
+      "text": "I love C++ for game development!",
+      "user_id": 1,
+      "post_id": 6
+    },
+    {
+      "text": "React makes web development fun.",
+      "user_id": 2,
+      "post_id": 7
+    },
+    {
+      "text": "Data science is a fascinating field.",
+      "user_id": 3,
+      "post_id": 8
+    },
+    {
+      "text": "I have a question about JavaScript.",
+      "user_id": 4,
+      "post_id": 1
+    },
+    {
+      "text": "Can Python be used for machine learning?",
+      "user_id": 5,
+      "post_id": 2
+    },
+    {
+      "text": "I'm struggling with CSS layouts.",
+      "user_id": 1,
+      "post_id": 3
+    },
+    {
+      "text": "Any tips for optimizing Java applications?",
+      "user_id": 2,
+      "post_id": 4
+    },
+    {
+      "text": "How do I join tables in SQL?",
+      "user_id": 3,
+      "post_id": 5
+    },
+    {
+      "text": "C++ syntax can be complex.",
+      "user_id": 4,
+      "post_id": 6
+    },
+    {
+      "text": "React's component-based approach is fantastic.",
+      "user_id": 5,
+      "post_id": 7
+    }
+  ]
+  

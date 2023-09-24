@@ -1,0 +1,31 @@
+{{> header}}
+<main class="container container-fluid mt-5"></main>
+    {{#if loggedIn}}
+    <div>
+        <input name="title" placeholder="title">
+        <input name="text" placeholder="text">
+        <button id="submitButton">submit</button>
+        {{#unless isCreate}}
+        <button id="deleteButton">delete post</button>
+        {{/unless}}
+    </div>
+    {{/if}}
+</main>
+<footer>
+    
+</footer>
+
+{{#if loggedIn}}
+<script src="/js/logout.js"></script>
+{{#if isCreate}}
+<script>
+    const sessionUserId = {{userId}}
+</script>
+<script type="module" src="/js/create.js"></script>
+{{else}}
+<script>
+    const sessionPostId = {{post.id}}
+</script>
+<script src="/js/edit.js"></script>
+{{/if}}
+{{/if}}

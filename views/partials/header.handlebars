@@ -1,0 +1,16 @@
+<header class="display-flex justify-space-between align-center p-2">
+    <h1>
+      Blog
+    </h1>
+
+    <nav>
+      <a href="http://localhost:3001/" class="btn">Home</a>
+      {{#if loggedIn}}
+      <a href="http://localhost:3001/dashboard/{{userId}}" class="btn">Dashboard</a>
+      <button class="btn" id="logout">logout</button>
+      {{else}}
+      <a href="http://localhost:3001/login" class="btn">Login</a>
+      {{/if}}
+
+    </nav>
+</header>
