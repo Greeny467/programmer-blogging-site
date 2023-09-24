@@ -1,6 +1,7 @@
 const titleEl = document.querySelector('[name ="title"');
 const textEl = document.querySelector('[name="text"');
 const submitButton = document.querySelector('#submitButton');
+const siteUrl = siteUrl1;
 
 const userId = sessionUserId;
 

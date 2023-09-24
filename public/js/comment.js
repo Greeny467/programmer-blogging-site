@@ -1,5 +1,6 @@
 const commentInput = document.querySelector('input');
 const submitButton = document.querySelector('#submitButton');
+const siteUrl = siteUrl1;
 
 const postComment = () => {
     const text = commentInput.value;
