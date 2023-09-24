@@ -15,7 +15,7 @@ const createPost = async () => {
         user_id: poster,
     };
 
-    fetch(`http://localhost:3001/api/db/post`, {
+    fetch(`${siteUrl}api/db/post`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -26,14 +26,14 @@ const createPost = async () => {
         if (response.ok) {
             console.log('Post created successfully');
 
-            fetch(`http://localhost:3001/api/db/post/${userId}/${newPost.title}/${newPost.text}`)
+            fetch(`${siteUrl}api/db/post/${userId}/${newPost.title}/${newPost.text}`)
             .then((response) => {
                 return response.json();
             })
             .then((data) => {
                 const searchId = data.id;
 
-                window.location.replace(`http://localhost:3001/post/${searchId}`);
+                window.location.replace(`${siteUrl}post/${searchId}`);
             }) 
            
 

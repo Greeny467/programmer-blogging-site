@@ -8,7 +8,7 @@ const postId = sessionPostId
 let userId;
 
 const getCurrent = async () =>{
-    const response = await fetch(`http://localhost:3001/api/db/post/${postId}`);
+    const response = await fetch(`${siteUrl}api/db/post/${postId}`);
 
     console.log(response);
     const postData = await response.json()
@@ -31,7 +31,7 @@ const editPost = async () => {
         user_id: poster,
     };
 
-    fetch(`http://localhost:3001/api/db/post/${postId}`, {
+    fetch(`${siteUrl}api/db/post/${postId}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ const editPost = async () => {
     .then((response) => {
         if (response.ok) {
             console.log('Post updated successfully');
-            window.location.replace(`http://localhost:3001/post/${postId}`)
+            window.location.replace(`${siteUrl}post/${postId}`)
 
         } 
         else {
@@ -57,12 +57,12 @@ const editPost = async () => {
 
 const deletePost = () => {
 
-    fetch(`http://localhost:3001/api/db/post/${postId}`, {
+    fetch(`${siteUrl}api/db/post/${postId}`, {
         method: 'DELETE'
     })
     .then((response) => {
         console.log(response);
-        window.location.replace('http://localhost:3001/');
+        window.location.replace('${siteUrl}');
     });
 };
 

@@ -4,12 +4,12 @@
     </h1>
 
     <nav>
-      <a href="http://localhost:3001/" class="btn">Home</a>
+      <a href="{{url}}" class="btn">Home</a>
       {{#if loggedIn}}
-      <a href="http://localhost:3001/dashboard/{{userId}}" class="btn">Dashboard</a>
+      <a href="{{url}}dashboard/{{userId}}" class="btn">Dashboard</a>
       <button class="btn" id="logout">logout</button>
       {{else}}
-      <a href="http://localhost:3001/login" class="btn">Login</a>
+      <a href="{{url}}/login" class="btn">Login</a>
       {{/if}}
 
     </nav>

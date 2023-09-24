@@ -29,6 +29,7 @@ router.get('/', async (req, res) => {
                 posts,
                 userId: req.session.userId,
                 loggedIn: req.session.loggedIn,
+                url: process.env.SITE_URL,
             });
             res.status(200);
         }
@@ -86,7 +87,8 @@ router.get('/post/:id', async (req, res) => {
                 comments,
                 areComments,
                 loggedIn: req.session.loggedIn,
-                userId: req.session.userId
+                userId: req.session.userId,
+                url: process.env.SITE_URL,
             });
         }
         
@@ -126,7 +128,8 @@ router.get('/dashboard/:id', withAuth, async (req, res) => {
              posts,
              arePosts,
              loggedIn: req.session.loggedIn,
-             userId: req.session.userId
+             userId: req.session.userId,
+             url: process.env.SITE_URL,
             });
             console.log("mark5")
          }
@@ -172,7 +175,7 @@ router.get('/edit/:id', withAuth, async (req, res) => {
             const postUser = post.user_id.toString();
 
             if(thisUser === postUser){
-                res.render('edit', {post, loggedIn: req.session.loggedIn, userId: req.session.userId, isCreate});
+                res.render('edit', {post, loggedIn: req.session.loggedIn, userId: req.session.userId, isCreate, url: process.env.SITE_URL,});
                 res.status(200);   
             }
             else{
@@ -190,7 +193,7 @@ router.get('/create', withAuth, async (req, res) => {
     const isCreate = true;
 
     try{
-        res.render('edit', {loggedIn: req.session.loggedIn, userId: req.session.userId, isCreate});
+        res.render('edit', {loggedIn: req.session.loggedIn, userId: req.session.userId, isCreate, url: process.env.SITE_URL,});
         res.status(200);
         
     }

@@ -14,7 +14,7 @@ const postComment = () => {
 
     console.log(newComment);
 
-    fetch('http://localhost:3001/api/db/comment', {
+    fetch(`${siteUrl}api/db/comment`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
