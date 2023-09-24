@@ -12,5 +12,5 @@ N/A
 ![Screenshot 2023-09-24 174200](https://github.com/Greeny467/programmer-blogging-site/assets/134465090/c128730e-2a27-4d0e-b1bd-697927709579)
 
 ## Link
-![image](https://github.com/Greeny467/programmer-blogging-site/assets/134465090/4e491ad2-41cc-4e4e-8b33-0b298afa96dc)
 
+https://programmer-blogging-site-production.up.railway.app/
