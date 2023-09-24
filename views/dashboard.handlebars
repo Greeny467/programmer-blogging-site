@@ -2,7 +2,7 @@
 <main class="container container-fluid mt-5"></main>
     {{#if loggedIn}}
     <div>
-        <a href="{{url}}/create" class="btn">Create new Post</a>
+        <a href="{{url}}create" class="btn">Create new Post</a>
     </div>
     <div>
         {{#if arePosts}}
@@ -10,7 +10,7 @@
         <h3>{{post.title}}</h3>
         <p>{{post.text}}</p>
         <p>{{post.date}}</p>
-        <a href="{{url}}/edit/{{post.id}}">edit post</a>
+        <a href="{{url}}edit/{{post.id}}">edit post</a>
 
         {{/each}}
         {{/if}}
